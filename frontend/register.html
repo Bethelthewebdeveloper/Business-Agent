@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account - Business AI Agent</title><link rel="stylesheet" href="/css/style.css"></head>
+<body><div class="auth"><form id="authForm" class="card" data-endpoint="/api/auth/register">
+<div class="logo"><i></i>Business AI Agent</div><h1 style="margin-top:18px">Create your business account</h1>
+<label for="business_name">Business name</label><input id="business_name" name="business_name" required minlength="2" maxlength="100">
+<label for="email">Email</label><input id="email" name="email" type="email" autocomplete="username" required>
+<label for="password">Password (10+ characters)</label><input id="password" name="password" type="password" autocomplete="new-password" required minlength="10">
+<div class="err" id="err" role="alert"></div><button class="btn" style="width:100%;margin-top:8px">Create account</button>
+<p style="font-size:14px;text-align:center">Already registered? <a href="/login.html">Log in</a></p></form></div>
+<script src="/js/api.js"></script><script src="/js/app.js"></script></body></html>

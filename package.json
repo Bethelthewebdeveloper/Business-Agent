@@ -1,0 +1,12 @@
+{
+  "name": "business-ai-agent",
+  "version": "1.0.0",
+  "description": "Business AI Agent: local rule-based customer agent, dashboard, and WhatsApp Cloud API integration",
+  "private": true,
+  "engines": { "node": ">=22.5" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning backend/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test tests/app.test.js",
+    "test:agent": "python python-agent/test_agent.py"
+  }
+}
